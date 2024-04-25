@@ -74,7 +74,7 @@ onMounted(() => {
     }
   })
   document.addEventListener("touchstart", () => {
-    if(!isShowStartModal.value) onUpPersonFunc()
+    if(!isShowStartModal.value && !isShowLoseModal.value) onUpPersonFunc()
   })
 })
 function onLoseGameFunc() {
