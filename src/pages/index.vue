@@ -73,7 +73,7 @@ onMounted(() => {
       onUpPersonFunc()
     }
   })
-  document.addEventListener("touchstart", (e) => {
+  document.addEventListener("touchstart", () => {
     if(!isShowStartModal.value) onUpPersonFunc()
   })
 })
@@ -248,9 +248,9 @@ function onTakeCoinFunc(itemId) {
   cursor: pointer;
 }
 .main__game-block {
-  height: 75vh;
+  height: 85vh;
   background-image: url("../assets/images/game-bg.jpg");
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
