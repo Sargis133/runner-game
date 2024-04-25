@@ -8,7 +8,7 @@ export default defineConfig({
   server: {
     proxy: {
       '/': {
-        target: 'https://username.github.io/runner-game/',
+        target: 'https://sargis133.github.io/runner-game/',
         changeOrigin: true,
         rewrite: (path) => path === '/' ? '/' : '/'
       }
