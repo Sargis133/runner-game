@@ -5,4 +5,13 @@ import vue from '@vitejs/plugin-vue'
 export default defineConfig({
   base: '/runner-game/',
   plugins: [vue()],
+  server: {
+    proxy: {
+      '/': {
+        target: 'https://username.github.io/runner-game/',
+        changeOrigin: true,
+        rewrite: (path) => path === '/' ? '/' : '/'
+      }
+    }
+  }
 })
