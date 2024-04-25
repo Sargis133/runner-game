@@ -73,6 +73,9 @@ onMounted(() => {
       onUpPersonFunc()
     }
   })
+  document.addEventListener("touchstart", (e) => {
+    console.log(e)
+  })
 })
 function onLoseGameFunc() {
   isShowLoseModal.value = true;
@@ -249,6 +252,7 @@ function onTakeCoinFunc(itemId) {
   background-image: url("../assets/images/game-bg.jpg");
   background-size: contain;
   background-position: center;
+  background-repeat: no-repeat;
   width: 100%;
   display: flex;
   align-items: end;
