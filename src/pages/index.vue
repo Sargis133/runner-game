@@ -336,4 +336,16 @@ function onTakeCoinFunc(itemId) {
   cursor: pointer;
 }
 
+@media (max-width: 380px) {
+  .item-image {
+    width: 50px;
+  }
+  .person-block__person {
+    width: 110px;
+  }
+  .translate-item-easy {
+    animation-duration: 4s;
+  }
+}
+
 </style>
