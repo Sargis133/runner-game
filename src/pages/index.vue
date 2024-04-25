@@ -336,7 +336,7 @@ function onTakeCoinFunc(itemId) {
   cursor: pointer;
 }
 
-@media (max-width: 380px) {
+@media (max-width: 578px) {
   .item-image {
     width: 50px;
   }
